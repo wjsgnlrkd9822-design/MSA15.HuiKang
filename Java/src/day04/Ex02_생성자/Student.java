@@ -1,7 +1,5 @@
 package day04.Ex02_생성자;
 
-import java.util.Iterator;
-
 // 학생
 // - 변수 : 이름, 나이, 학번, 전공
 // - 메소드 : 공부하기, 성적 평균 구하기

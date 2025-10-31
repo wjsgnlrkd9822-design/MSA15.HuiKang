@@ -1,4 +1,4 @@
-package day04.Exo3_메소드;
+package day04.Ex03_메소드;
 
 public class Car {
 	// 모델명, 속도
