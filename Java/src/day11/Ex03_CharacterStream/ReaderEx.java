@@ -1,0 +1,26 @@
+package day11.Ex03_CharacterStream;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class ReaderEx {
+
+	public static void main(String[] args) {
+		// 파일 경로
+		String filePath = "sample.txt";
+		
+		try (
+			FileReader fr = new FileReader(filePath);
+			BufferedReader br = new BufferedReader(fr);
+		) {
+			String text;
+			// readLine () : 파일의 문자 데이터를 한 줄씩 입력
+			//				 데이터가 더이상 없으면 null 반환
+			while( ( text = br.readLine() ) != null ) {
+				System.out.println(text);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
